@@ -1,37 +1,118 @@
-/* Base styling, feel free to remove or alter */
-
+/* Global Styles */
 body {
-    background: linear-gradient(90deg, rgba(93,142,251,1) 0%, rgba(93,142,251,1) 50%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(93, 142, 251, 1) 0%, rgba(93, 142, 251, 1) 50%, rgba(0, 212, 255, 1) 100%);
     height: 100%;
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
     font-family: 'Lato', sans-serif;
+    color: #f6f6f6;
     display: flex;
-    color: #F6F6F6;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
 }
 
+/* Main Content Area */
 .main-content {
     display: flex;
     justify-content: center;
-    flex: 1;
     align-items: center;
     flex-direction: column;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .main-content h1 {
-    font-size: 50px;
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.main-content form {
-    font-size: 15px;
+.main-content h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.main-content form button {
-    border: none;
-    background: #F6F6F6;
-    mix-blend-mode: screen;
-    padding: 5px;
+/* Forms and Buttons */
+form {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+}
+
+form label {
+    font-size: 1.1rem;
+    margin-right: 0.5rem;
+    color: #f6f6f6;
+}
+
+form select {
+    padding: 0.5rem;
+    font-size: 1rem;
     border-radius: 5px;
-    margin-left: 5px;
+    border: none;
+    outline: none;
+}
+
+form button {
+    border: none;
+    background: #ffcc00;
+    color: #1e3c72;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+form button:hover {
+    background: #e6b800;
+}
+
+/* Links */
+a {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+strong {
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: center;
+    border-top: 1px solid #f6f6f6;
 }
